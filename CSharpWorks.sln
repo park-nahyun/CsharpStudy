@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWorks", "CSharpWorks\CSharpWorks.csproj", "{238BFC34-E5BE-4FBD-A30D-0F35D8362E93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadBook.CsharpBasic.Chapter05", "RoadBook.CsharpBasic.Chapter05.Examples\RoadBook.CsharpBasic.Chapter05.csproj", "{C2A33FB2-FF34-45E4-B3E5-6EA7E81BF5E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{238BFC34-E5BE-4FBD-A30D-0F35D8362E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238BFC34-E5BE-4FBD-A30D-0F35D8362E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238BFC34-E5BE-4FBD-A30D-0F35D8362E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238BFC34-E5BE-4FBD-A30D-0F35D8362E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A33FB2-FF34-45E4-B3E5-6EA7E81BF5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A33FB2-FF34-45E4-B3E5-6EA7E81BF5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A33FB2-FF34-45E4-B3E5-6EA7E81BF5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A33FB2-FF34-45E4-B3E5-6EA7E81BF5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC3F09E7-CDDE-4C06-A851-869FEE9925B0}
+	EndGlobalSection
+EndGlobal
