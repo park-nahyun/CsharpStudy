@@ -1,0 +1,15 @@
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\bin\Release\net6.0\RoadBook.CsharpBasic.Chapter05.exe
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\bin\Release\net6.0\RoadBook.CsharpBasic.Chapter05.deps.json
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\bin\Release\net6.0\RoadBook.CsharpBasic.Chapter05.runtimeconfig.json
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\bin\Release\net6.0\RoadBook.CsharpBasic.Chapter05.dll
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\bin\Release\net6.0\RoadBook.CsharpBasic.Chapter05.pdb
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Release\net6.0\RoadBook.CsharpBasic.Chapter05.csproj.AssemblyReference.cache
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Release\net6.0\RoadBook.CsharpBasic.Chapter05.GeneratedMSBuildEditorConfig.editorconfig
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Release\net6.0\RoadBook.CsharpBasic.Chapter05.AssemblyInfoInputs.cache
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Release\net6.0\RoadBook.CsharpBasic.Chapter05.AssemblyInfo.cs
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Release\net6.0\RoadBook.CsharpBasic.Chapter05.csproj.CoreCompileInputs.cache
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Release\net6.0\RoadBook.CsharpBasic.Chapter05.dll
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Release\net6.0\refint\RoadBook.CsharpBasic.Chapter05.dll
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Release\net6.0\RoadBook.CsharpBasic.Chapter05.pdb
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Release\net6.0\RoadBook.CsharpBasic.Chapter05.genruntimeconfig.cache
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Release\net6.0\ref\RoadBook.CsharpBasic.Chapter05.dll
