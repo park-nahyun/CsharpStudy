@@ -12,12 +12,12 @@ namespace RoadBook.CsharpBasic.Chapter05.Examples.Service
     {
         Model.Board board;
 
-        public BoardService()
+        public BoardService()   // 생성자
         { 
             this.board = new Model.Board();
         }
 
-        public BoardService(Model.Board board)
+        public BoardService(Model.Board board) // 생성자 오버로딩, 메소드 오버로딩
         {
             this.board = board;
         }
@@ -49,7 +49,17 @@ namespace RoadBook.CsharpBasic.Chapter05.Examples.Service
         public void Read()
         {
             if (board != null)
-            { 
+            {
+                Console.WriteLine("{0}번 게시물", board.Number);
+                Console.WriteLine("제목 : {0}", board.Title);
+                Console.WriteLine("작성일 : {0}", board.CreateDate);
+                Console.WriteLine("수정일 : {0}", board.UpdateDate);
+                Console.WriteLine("글쓴이 : {0}", board.Writer);
+                Console.WriteLine("내용 : {0}", board.Contents);
+            }
+            else
+            {
+                Console.WriteLine("게시물이 없습니다.");
             }
         }
     }

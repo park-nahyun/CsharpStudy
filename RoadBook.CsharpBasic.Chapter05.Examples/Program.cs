@@ -7,7 +7,7 @@ namespace RoadBool.CsharpBasic.Chapter05.Example
     {
         static void Main(string[] args)
         {
-            Ex009 ex = new Ex009();
+            Ex010 ex = new Ex010();
             ex.Run();
         }
     }

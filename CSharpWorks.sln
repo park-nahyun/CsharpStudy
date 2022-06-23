@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWorks", "CSharpWorks\CSharpWorks.csproj", "{238BFC34-E5BE-4FBD-A30D-0F35D8362E93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpWorks", "CSharpWorks\CSharpWorks.csproj", "{238BFC34-E5BE-4FBD-A30D-0F35D8362E93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadBook.CsharpBasic.Chapter05", "RoadBook.CsharpBasic.Chapter05.Examples\RoadBook.CsharpBasic.Chapter05.csproj", "{C2A33FB2-FF34-45E4-B3E5-6EA7E81BF5E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadBook.CsharpBasic.Chapter05", "RoadBook.CsharpBasic.Chapter05.Examples\RoadBook.CsharpBasic.Chapter05.csproj", "{C2A33FB2-FF34-45E4-B3E5-6EA7E81BF5E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadBook.CsharpBasic.Chapter06", "RoadBook.CsharpBasic.Chapter06.Examples\RoadBook.CsharpBasic.Chapter06.csproj", "{7FFAD948-5C34-4FEE-A63D-F7CAABA67732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadBook.CsharpBasic.Chapter08", "RoadBook.CsharpBasic.Chapter08\RoadBook.CsharpBasic.Chapter08.csproj", "{D058C4DA-E44E-4928-9670-A5A035C258E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{C2A33FB2-FF34-45E4-B3E5-6EA7E81BF5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2A33FB2-FF34-45E4-B3E5-6EA7E81BF5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2A33FB2-FF34-45E4-B3E5-6EA7E81BF5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FFAD948-5C34-4FEE-A63D-F7CAABA67732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FFAD948-5C34-4FEE-A63D-F7CAABA67732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FFAD948-5C34-4FEE-A63D-F7CAABA67732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FFAD948-5C34-4FEE-A63D-F7CAABA67732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D058C4DA-E44E-4928-9670-A5A035C258E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D058C4DA-E44E-4928-9670-A5A035C258E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D058C4DA-E44E-4928-9670-A5A035C258E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D058C4DA-E44E-4928-9670-A5A035C258E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
