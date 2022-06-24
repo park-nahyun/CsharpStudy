@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RoadBook.CsharpBasic.Chapter10.Examples.Model
 {
-    internal class DatabaseInfo
+    public class DatabaseInfo
     {
         // DB 접근을 하기 위해서는 IP, PORT, DB이름, DB접근 계정(아이디, 패스워드) 필요
 

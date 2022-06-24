@@ -1,10 +1,5 @@
-﻿using RoadBook.CsharpBasic.Chapter10.Examples.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
-using System.Threading.Tasks;
+﻿using System.Data;
+using RoadBook.CsharpBasic.Chapter10.Examples.Model;
 
 // 데이터베이스 관리를 위한 규약
 /*
@@ -25,9 +20,10 @@ DB 별로.. 표준 문법은 같으나, 사용하는 키워드가 다른 경우�
  */
 
 
+
 namespace RoadBook.CsharpBasic.Chapter10.Examples.Manager
 {
-    internal class IDatabaseManager
+    public interface IDatabaseManager
     {
         void Open(DatabaseInfo dbInfo);
         DataTable Select(string sql);
@@ -35,7 +31,8 @@ namespace RoadBook.CsharpBasic.Chapter10.Examples.Manager
         int Update(string sql);
         int Delete(string sql);
         void Close();
-
-        // "데이터베이스 관리는 Open, Select, Insert, Update, Delete, Close를 기본으로 하자"고 약속을 정한 것.
     }
 }
+
+
+// "데이터베이스 관리는 Open, Select, Insert, Update, Delete, Close를 기본으로 하자"고 약속을 정한 것.
