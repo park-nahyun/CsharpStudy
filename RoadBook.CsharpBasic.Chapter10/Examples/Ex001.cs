@@ -21,7 +21,7 @@ namespace RoadBook.CsharpBasic.Chapter10.Examples
         public void Run()
         {
 
-            // DatabaseInfo 정보
+            // DB속성--------------------------------
             DatabaseInfo dbInfo = new DatabaseInfo();
             dbInfo.Name = "RoadBookDB";
             dbInfo.Ip = "192.168.1.152";
@@ -29,10 +29,13 @@ namespace RoadBook.CsharpBasic.Chapter10.Examples
             dbInfo.UserId = "sa";
             dbInfo.UserPassword = "Arisys123$";
 
+            // -------------------------------------DB속성
+
+
+            // 내가 쓰는 DB 선언하기
             MsSqlManager ms = new MsSqlManager();
-            ms.Open(dbInfo);
-
-
+            ms.Open(dbInfo); // DB 열기
+           
             /*
              StringBuilder 클래스는 String 클래스와 유사합니다. 
             String 클래스와 다른점은 String 클래스는 불변인데 반해서 StringBuilder 클래스는 가변적이라는 점입니다. 
@@ -40,6 +43,8 @@ namespace RoadBook.CsharpBasic.Chapter10.Examples
             일반적으로 문자열 결합 등을 이용하는 연산 과정 등은 메모리 내에서 이전과 다른 새로운 문자열이 새롭게 만들어지고 있는 상태입니다. 
             StringBuilder 클래스는 문자열 결합 등의 액션을 수행할 때 새로운 문자열을 만들어내지 않고, 기존의 문자열에 추가될 뿐입니다. 
              */
+
+            //-- String Builder에 메세지 정보 입력---------------------------
             StringBuilder sbMessage = new StringBuilder();
             sbMessage.AppendLine("****************************************");
             sbMessage.AppendLine("1. SELECT");
@@ -48,7 +53,10 @@ namespace RoadBook.CsharpBasic.Chapter10.Examples
             sbMessage.AppendLine("4. DELETE");
             sbMessage.AppendLine("0. QUIT");
             sbMessage.AppendLine("****************************************");
+            //------------------------------ String Builder에 메세지 정보 입력
 
+
+            //-- 0 (quit) 입력까지 반복되는 반복문
             while (true)
             { 
                 Console.WriteLine(sbMessage.ToString());
@@ -61,13 +69,126 @@ namespace RoadBook.CsharpBasic.Chapter10.Examples
                     Console.WriteLine("BYE~!!!");
                     break;
                 }
-                else
-                { 
+                else // 종료하지 않은 경우
+                {
                     
+                    // 필요한 문자열 변수 선언(CRUD에 필요한 변수들)
+
+                    string index = string.Empty;
+                    string title = string.Empty;
+                    string summary = string.Empty;
+                    string createUserNm = string.Empty;
+                    string tags = string.Empty;
+                    string createDate = string.Empty;
+
+                    StringBuilder sbSQL = new StringBuilder();
+
+                    switch (input)
+                    {
+                        case "1":   // SELECT
+                            DataTable dt = ms.Select("SELECT IDX, TITLE, SUMMARY, CREATE_DT, CREATE_USER_NM, TAGS, LIKE_CNT, CATEGORY_IDX FROM TB_CONTENTS"); // select 호출
+
+                            if (dt.Rows.Count > 0) // 리턴 받은 DataTable Row의 개수가 0보다 큰 경우 --> 조회된 데이터가 있는 것으로 간주
+                            {
+                                string[] columns = new string[dt.Columns.Count];
+
+                                for (int idx = 0; idx < dt.Columns.Count; idx++) // 데이터를 한줄 씩 출력
+                                {
+                                    columns[idx] = dt.Columns[idx].ToString();
+
+                                    Console.Write(dt.Columns[idx] + "\t");
+                                }
+
+                                Console.WriteLine();
+
+                                for (int idx = 0; idx < dt.Rows.Count; idx++)
+                                {
+                                    for (int idx_j = 0; idx_j < dt.Columns.Count; idx_j++)
+                                    {
+                                        Console.Write(dt.Rows[idx][columns[idx_j]] + "\t");
+                                    }
+
+                                    Console.WriteLine();
+                                }
+                            }
+
+                            else // 리턴 받은 row 개수가 0개 이하인 경우
+                            {
+                                Console.WriteLine("No Data!!");
+                            }
+
+                            break;
+
+                        case "2": // INSERT
+                            Console.WriteLine("TITLE : ");
+                            title = Console.ReadLine();
+                            Console.WriteLine("SUMMARY : ");
+                            summary  = Console.ReadLine();
+                            Console.Write("CREATE_USER_NM : ");
+                            createUserNm = Console.ReadLine();
+                            Console.Write("TAGS : ");
+                            tags = Console.ReadLine();
+
+                            createDate = DateTime.Now.ToString("yyyy-mm-dd");
+
+                            sbSQL.Append(" INSERT TB_CONTENTS ( TITLE, SUMMARY, CREATE_DT, CREATE_USER_NM, TAGS, CATEGORY_IDX) ");
+                            sbSQL.Append(string.Format(" VALUES( '{0}', '{1}', '{2}'. '{3}', '{4}', '{5}' ))",
+                                title, summary, createDate, createUserNm, tags, 2));
+
+                            ms.Insert(sbSQL.ToString());
+
+                            break;
+
+                        case "3":   // UPDATE
+                            ms.Open(dbInfo);
+
+                            Console.Write("Changed IDX : ");
+                            index = Console.ReadLine();
+                            Console.Write("TITLE : ");
+                            title = Console.ReadLine();
+                            Console.Write("SUMMARY : ");
+                            summary = Console.ReadLine();
+
+                            sbSQL.Append(" UPDATE TB_CONTENTS SET ");
+                            sbSQL.Append(
+                                string.Format(" TITLE = '{0}', SUMMARY = '{1}' ",
+                                    title, summary
+                                )
+                            );
+                            sbSQL.Append(
+                                string.Format(" WHERE IDX = {0}",
+                                    index
+                                )
+                            );
+
+                            ms.Update(sbSQL.ToString());
+
+                            break;
+
+                        case "4":   // DELETE
+                            ms.Open(dbInfo);
+
+                            Console.Write("DELETED IDX : ");
+                            index = Console.ReadLine();
+
+                            sbSQL.Append(" DELETE FROM TB_CONTENTS ");
+                            sbSQL.Append(
+                                string.Format(" WHERE IDX = {0}",
+                                    index
+                                )
+                            );
+
+                            ms.Update(sbSQL.ToString());
+
+                            break;
+                        default:
+                            Console.WriteLine("Invalid");
+
+                            break;
+                    }
                 }
             }
-
         }
     }
 }
- 
+

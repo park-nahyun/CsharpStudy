@@ -13,3 +13,11 @@ D:\Works\CSharpWorks\CSharpWorks\obj\Debug\net6.0\refint\CSharpWorks.dll
 D:\Works\CSharpWorks\CSharpWorks\obj\Debug\net6.0\CSharpWorks.pdb
 D:\Works\CSharpWorks\CSharpWorks\obj\Debug\net6.0\CSharpWorks.genruntimeconfig.cache
 D:\Works\CSharpWorks\CSharpWorks\obj\Debug\net6.0\ref\CSharpWorks.dll
+D:\Works\CSharpWorks\CSharpWorks\bin\Debug\net6.0\Npgsql.dll
+D:\Works\CSharpWorks\CSharpWorks\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\Works\CSharpWorks\CSharpWorks\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\Works\CSharpWorks\CSharpWorks\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\Works\CSharpWorks\CSharpWorks\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\Works\CSharpWorks\CSharpWorks\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Works\CSharpWorks\CSharpWorks\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Works\CSharpWorks\CSharpWorks\obj\Debug\net6.0\CSharpWorks.csproj.CopyComplete
