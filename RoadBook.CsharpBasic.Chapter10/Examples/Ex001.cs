@@ -131,9 +131,10 @@ namespace RoadBook.CsharpBasic.Chapter10.Examples
 
                             createDate = DateTime.Now.ToString("yyyy-mm-dd");
 
-                            sbSQL.Append(" INSERT TB_CONTENTS ( TITLE, SUMMARY, CREATE_DT, CREATE_USER_NM, TAGS, CATEGORY_IDX) ");
-                            sbSQL.Append(string.Format(" VALUES( '{0}', '{1}', '{2}'. '{3}', '{4}', '{5}' ))",
-                                title, summary, createDate, createUserNm, tags, 2));
+                            sbSQL.Append(" INSERT TB_CONTENTS (TITLE, SUMMARY, CREATE_DT, CREATE_USER_NM, TAGS, CATEGORY_IDX) ");
+                            sbSQL.Append(
+                                string.Format(" VALUES( '{0}', '{1}', '{2}', '{3}', '{4}', '{5}' )",
+                                    title, summary, createDate, createUserNm, tags, 2));
 
                             ms.Insert(sbSQL.ToString());
 
@@ -149,7 +150,7 @@ namespace RoadBook.CsharpBasic.Chapter10.Examples
                             Console.Write("SUMMARY : ");
                             summary = Console.ReadLine();
 
-                            sbSQL.Append(" UPDATE TB_CONTENTS SET ");
+                            sbSQL.Append("UPDATE TB_CONTENTS SET ");
                             sbSQL.Append(
                                 string.Format(" TITLE = '{0}', SUMMARY = '{1}' ",
                                     title, summary

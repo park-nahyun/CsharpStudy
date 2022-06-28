@@ -11,7 +11,7 @@ namespace RoadBook.CsharpBasic.Chapter10.Examples.Manager
         // DB 접속 정보를 매핑 시킨 후, SqlConnection 객체를 오픈한다.
         public void Open(DatabaseInfo dbInfo)
         {
-            string conStr = string.Format("Data Source={0},{1};Initial Catalog={2};User ID={3};Password={4}",
+            string conStr = string.Format("Data Source={0},{1};Initial Catalog={2};User ID={3};Password={4};TrustServerCertificate=True",
                                     dbInfo.Ip,
                                     dbInfo.Port,
                                     dbInfo.Name,

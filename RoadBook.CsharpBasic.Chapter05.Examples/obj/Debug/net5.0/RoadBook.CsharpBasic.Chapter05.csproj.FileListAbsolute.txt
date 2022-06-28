@@ -1,0 +1,5 @@
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Debug\net5.0\RoadBook.CsharpBasic.Chapter05.csproj.AssemblyReference.cache
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Debug\net5.0\RoadBook.CsharpBasic.Chapter05.GeneratedMSBuildEditorConfig.editorconfig
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Debug\net5.0\RoadBook.CsharpBasic.Chapter05.AssemblyInfoInputs.cache
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Debug\net5.0\RoadBook.CsharpBasic.Chapter05.AssemblyInfo.cs
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter05.Examples\obj\Debug\net5.0\RoadBook.CsharpBasic.Chapter05.csproj.CoreCompileInputs.cache

@@ -1,6 +1,4 @@
-﻿using System.Data;
-using Npgsql;
-using RoadBook.CsharpBasic.Chapter10.Examples.Model;
+﻿using System.Data;using RoadBook.CsharpBasic.Chapter10.Examples.Model;
 
 namespace RoadBook.CsharpBasic.Chapter10.Examples.Manager
 {

@@ -1,0 +1,8 @@
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter10\bin\Release\RoadBook.CsharpBasic.Chapter10.exe.config
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter10\bin\Release\RoadBook.CsharpBasic.Chapter10.exe
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter10\bin\Release\RoadBook.CsharpBasic.Chapter10.pdb
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter10\obj\Release\RoadBook.CsharpBasic.Chapter10.csproj.AssemblyReference.cache
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter10\obj\Release\RoadBook.CsharpBasic.Chapter10.csproj.SuggestedBindingRedirects.cache
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter10\obj\Release\RoadBook.CsharpBasic.Chapter10.csproj.CoreCompileInputs.cache
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter10\obj\Release\RoadBook.CsharpBasic.Chapter10.exe
+D:\Works\CSharpWorks\RoadBook.CsharpBasic.Chapter10\obj\Release\RoadBook.CsharpBasic.Chapter10.pdb

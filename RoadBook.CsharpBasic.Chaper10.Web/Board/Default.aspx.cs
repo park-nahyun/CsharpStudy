@@ -4,7 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using System.Data;
+using RoadBook.CsharpBasic.Chapter10.Examples.Model;
+using RoadBook.CsharpBasic.Chapter10.Examples.Manager;
 namespace RoadBook.CsharpBasic.Chaper10.Web.Board
 {
     public partial class Default : System.Web.UI.Page
@@ -22,8 +24,6 @@ namespace RoadBook.CsharpBasic.Chaper10.Web.Board
             ms.Open(dbInfo);
 
             DataTable dt = ms.Select("SELECT IDX, TITLE, SUMMARY, CREATE_DT, CREATE_USER_NM, TAGS, LIKE_CNT, CATEGORY_IDX FROM TB_CONTENTS");
-
-            // GridView 컴포넌트에 타겟이 될 Data를 선언해 주면 됨
             GridView1.DataSource = dt;
             GridView1.DataBind();
         }

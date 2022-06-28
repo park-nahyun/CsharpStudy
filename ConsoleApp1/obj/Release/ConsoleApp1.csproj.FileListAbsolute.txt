@@ -1,0 +1,8 @@
+D:\Works\CSharpWorks\ConsoleApp1\bin\Release\ConsoleApp1.exe.config
+D:\Works\CSharpWorks\ConsoleApp1\bin\Release\ConsoleApp1.exe
+D:\Works\CSharpWorks\ConsoleApp1\bin\Release\ConsoleApp1.pdb
+D:\Works\CSharpWorks\ConsoleApp1\obj\Release\ConsoleApp1.csproj.AssemblyReference.cache
+D:\Works\CSharpWorks\ConsoleApp1\obj\Release\ConsoleApp1.csproj.SuggestedBindingRedirects.cache
+D:\Works\CSharpWorks\ConsoleApp1\obj\Release\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Works\CSharpWorks\ConsoleApp1\obj\Release\ConsoleApp1.exe
+D:\Works\CSharpWorks\ConsoleApp1\obj\Release\ConsoleApp1.pdb
